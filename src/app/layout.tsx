@@ -1,3 +1,4 @@
+import Navbar from "../components/navbar";
 import type { Metadata } from "next";
 import "./globals.css";
 
@@ -23,8 +24,11 @@ export default function RootLayout({
         {/* Overlay escuro */}
         <div className="absolute inset-0 bg-black/60" />
 
+        {/* Navbar fixa */}
+        <Navbar />
+
         {/* Conteúdo */}
-        <main className="relative z-10">{children}</main>
+        <main className="relative z-10 pt-14">{children}</main>
       </body>
     </html>
   );
