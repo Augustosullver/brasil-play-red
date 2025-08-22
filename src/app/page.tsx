@@ -78,7 +78,7 @@ export default function Home() {
 
         <div className="flex justify-center">
           <iframe
-            src="https://discord.com/api/guilds/1394872603315015680/widget.json"
+            src="https://discord.com/widget?id=1394872603315015680&theme=dark"
             width="350"
             height="500"
             sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
@@ -88,7 +88,7 @@ export default function Home() {
 
         <div className="mt-4">
           <a
-            href="https://discord.gg/MdBN7fnr"
+            href="https://discord.gg/2FvPEJaB9T"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-white underline text-lg"
