@@ -85,7 +85,7 @@ export default function Home() {
 
         <div className="mt-4">
           <a
-            href="https://discord.gg/MdBN7fnr"
+            href="https://discord.gg/2FvPEJaB9T"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-white underline text-lg"
