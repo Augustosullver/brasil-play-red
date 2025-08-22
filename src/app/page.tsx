@@ -1,18 +1,44 @@
-import { Card, CardContent } from "../components/ui/card";
+"use client";
 
-export default function Home() {
+import { useState } from "react";
+import Link from "next/link";
+import { Menu, Home, ShoppingCart, Globe } from "lucide-react";
+
+export default function HomePage() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
-    <main className="min-h-screen bg-black text-white pb-32">
+    <main className="min-h-screen bg-black text-white flex flex-col">
       {/* NAVBAR */}
       <nav className="fixed top-0 w-full bg-red-700 text-white flex justify-between items-center px-6 py-4 shadow-lg z-50">
         <h1 className="text-2xl font-bold">Brasil Play Red</h1>
-        <div className="flex gap-6 text-lg font-medium">
-          <a href="#sobre" className="hover:text-gray-200">Sobre</a>
-          <a href="#como-jogar" className="hover:text-gray-200">Como Jogar</a>
-          <a href="#ranking" className="hover:text-gray-200">Ranking</a>
-          <a href="#discord" className="hover:text-gray-200">Discord</a>
+
+        {/* Menu desktop */}
+        <div className="hidden md:flex gap-6 text-lg font-medium">
+          <Link href="#sobre" className="hover:text-gray-200">Sobre</Link>
+          <Link href="#como-jogar" className="hover:text-gray-200">Como Jogar</Link>
+          <Link href="#ranking" className="hover:text-gray-200">Ranking</Link>
+          <Link href="#discord" className="hover:text-gray-200">Discord</Link>
         </div>
+
+        {/* Botão menu hambúrguer (mobile) */}
+        <button
+          className="md:hidden"
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
+          <Menu className="w-7 h-7" />
+        </button>
       </nav>
+
+      {/* Dropdown menu mobile */}
+      {menuOpen && (
+        <div className="absolute top-16 right-0 bg-red-800 w-48 rounded-lg shadow-lg p-4 z-40 flex flex-col gap-3 md:hidden">
+          <Link href="#sobre" onClick={() => setMenuOpen(false)}>Sobre</Link>
+          <Link href="#como-jogar" onClick={() => setMenuOpen(false)}>Como Jogar</Link>
+          <Link href="#ranking" onClick={() => setMenuOpen(false)}>Ranking</Link>
+          <Link href="#discord" onClick={() => setMenuOpen(false)}>Discord</Link>
+        </div>
+      )}
 
       {/* HEADER */}
       <header
@@ -28,19 +54,8 @@ export default function Home() {
         </div>
       </header>
 
-      {/* SOBRE */}
-      <section
-        id="sobre"
-        className="max-w-6xl mx-auto p-6 grid grid-cols-1 md:grid-cols-3 gap-6 mt-12"
-      >
-        {/* Aqui você pode colocar os Cards que já tinha feito */}
-      </section>
-
-      {/* DISCORD */}
-      <section
-        id="discord"
-        className="max-w-4xl mx-auto p-6 text-center mt-12 bg-black/70 rounded-xl"
-      >
+      {/* SEÇÃO DISCORD */}
+      <section id="discord" className="max-w-4xl mx-auto p-6 text-center mt-12 bg-black/70 rounded-xl">
         <h2 className="text-3xl font-bold mb-4">Nosso Discord</h2>
         <iframe
           src="https://discord.com/widget?id=1394872603315015680&theme=dark"
@@ -50,21 +65,20 @@ export default function Home() {
         ></iframe>
       </section>
 
-      {/* BOTÃO DA PLAY STORE */}
-      <div className="flex justify-center mt-12">
-        <a
-          href="https://play.google.com/store/apps/details?id=ru.unisamp_mobile.launcher"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="bg-green-600 hover:bg-green-500 px-8 py-4 text-xl font-bold rounded-lg shadow-lg transition text-white"
-        >
-          🎮 Baixar na Play Store
-        </a>
-      </div>
-
-      {/* FOOTER */}
-      <footer className="mt-16 bg-red-700 text-center p-4">
-        &copy; 2025 Brasil Play Red — Todos os direitos reservados.
+      {/* RODAPÉ FIXO COM BOTÕES */}
+      <footer className="fixed bottom-0 left-0 w-full bg-red-700 flex justify-around items-center py-3 shadow-lg">
+        <Link href="/" className="flex flex-col items-center text-white">
+          <Home className="w-6 h-6" />
+          <span className="text-sm">Início</span>
+        </Link>
+        <Link href="/loja" className="flex flex-col items-center text-white">
+          <ShoppingCart className="w-6 h-6" />
+          <span className="text-sm">Loja</span>
+        </Link>
+        <Link href="/redes-sociais" className="flex flex-col items-center text-white">
+          <Globe className="w-6 h-6" />
+          <span className="text-sm">Redes</span>
+        </Link>
       </footer>
     </main>
   );
