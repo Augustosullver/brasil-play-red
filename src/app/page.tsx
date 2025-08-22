@@ -10,14 +10,22 @@ export default function Home() {
           "url('https://wallpapers.com/images/featured-full/papel-de-parede-para-celular-gratis-gta-san-andreas-6fz9tt0ivo7irsjj.jpg')",
       }}
     >
-      <header className="text-center py-8 bg-black/60 rounded-xl">
+      {/* Início */}
+      <header
+        id="inicio"
+        className="text-center py-8 bg-black/60 rounded-xl mt-16"
+      >
         <h1 className="text-4xl font-bold">Brasil Play Red</h1>
         <p className="text-lg text-gray-300">
           O servidor SAMP que é a sua cara!
         </p>
       </header>
 
-      <section className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+      {/* Sobre */}
+      <section
+        id="sobre"
+        className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6"
+      >
         <Card className="bg-red-800/80">
           <CardContent className="p-4">
             <Info className="mb-2 text-white" />
@@ -52,7 +60,11 @@ export default function Home() {
         </Card>
       </section>
 
-      <section className="mt-12 text-center bg-black/60 rounded-xl p-6">
+      {/* Como Jogar */}
+      <section
+        id="como-jogar"
+        className="mt-12 text-center bg-black/60 rounded-xl p-6"
+      >
         <h2 className="text-2xl font-bold mb-4">
           Como Jogar no Brasil Play Red
         </h2>
@@ -70,7 +82,11 @@ export default function Home() {
         </a>
       </section>
 
-      <section className="mt-12 text-center bg-black/60 rounded-xl p-6">
+      {/* Discord */}
+      <section
+        id="discord"
+        className="mt-12 text-center bg-black/60 rounded-xl p-6"
+      >
         <div className="flex items-center justify-center gap-2 mb-2">
           <MessageCircle className="text-white w-6 h-6" />
           <h2 className="text-2xl font-bold">Nosso Discord</h2>
@@ -99,6 +115,7 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Rodapé */}
       <footer className="mt-16 text-center text-sm text-gray-300 bg-black/60 rounded-xl p-4">
         &copy; 2025 Brasil Play Red — Todos os direitos reservados. |
         <a
