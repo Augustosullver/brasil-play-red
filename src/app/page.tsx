@@ -82,7 +82,7 @@ export default function Home() {
         </a>
       </section>
 
-      {/* Discord */}
+      {/* Discord + Redes Sociais */}
       <section
         id="discord"
         className="mt-12 text-center bg-black/60 rounded-xl p-6"
@@ -111,6 +111,47 @@ export default function Home() {
           >
             <MessageCircle className="w-5 h-5" />
             Clique aqui para entrar no nosso Discord
+          </a>
+        </div>
+
+        {/* Redes Sociais */}
+        <div className="mt-8 flex justify-center gap-6">
+          {/* Facebook */}
+          <a
+            href="https://www.facebook.com/groups/540876708479252/?ref=share&mibextid=NSMWBT"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:scale-110 transition"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              height="40"
+              viewBox="0 0 24 24"
+              fill="white"
+              className="hover:fill-blue-500"
+            >
+              <path d="M22 12a10 10 0 1 0-11.5 9.9v-7h-2v-3h2v-2.3c0-2 1.2-3.1 3-3.1 .9 0 1.8.1 1.8.1v2h-1c-1 0-1.3.6-1.3 1.2V12h2.2l-.3 3h-1.9v7A10 10 0 0 0 22 12" />
+            </svg>
+          </a>
+
+          {/* YouTube */}
+          <a
+            href="https://youtube.com/@barone_samp?si=SkLnIbx03uC8JUrd"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:scale-110 transition"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              height="40"
+              viewBox="0 0 24 24"
+              fill="white"
+              className="hover:fill-red-600"
+            >
+              <path d="M23.5 6.2a2.9 2.9 0 0 0-2-2C19.2 4 12 4 12 4s-7.2 0-9.5.2a2.9 2.9 0 0 0-2 2A30.4 30.4 0 0 0 0 12a30.4 30.4 0 0 0 .5 5.8 2.9 2.9 0 0 0 2 2C4.8 20 12 20 12 20s7.2 0 9.5-.2a2.9 2.9 0 0 0 2-2c.3-1.9.5-3.9.5-5.8s-.2-3.9-.5-5.8ZM9.8 15.5V8.5L15.5 12l-5.7 3.5Z" />
+            </svg>
           </a>
         </div>
       </section>
