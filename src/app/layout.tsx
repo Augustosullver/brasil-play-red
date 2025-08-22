@@ -24,11 +24,9 @@ export default function RootLayout({
         {/* Overlay escuro */}
         <div className="absolute inset-0 bg-black/60" />
 
-        {/* Navbar fixa */}
-        <Navbar />
-
         {/* Conteúdo */}
-        <main className="relative z-10 pt-14">{children}</main>
+        <Navbar />
+        <main className="relative z-10 pt-20">{children}</main>
       </body>
     </html>
   );
