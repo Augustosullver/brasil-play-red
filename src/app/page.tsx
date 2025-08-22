@@ -1,13 +1,20 @@
 import { Discord, Trophy, User, Info } from "lucide-react";
+<<<<<<< HEAD
 import { Card, CardContent } from "../components/ui/card";
 import { Button } from "../components/ui/button";
+=======
+import { Button } from "../components/ui/button";
+import { Card, CardContent } from "../components/ui/card";
+>>>>>>> f777e15 (Adicionados componentes Card e Button e ajustado page.tsx)
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-gradient-to-br from-black to-red-900 text-white p-6">
       <header className="text-center py-8">
         <h1 className="text-4xl font-bold">Brasil Play Red</h1>
-        <p className="text-lg text-gray-300">O servidor SAMP que é a sua cara!</p>
+        <p className="text-lg text-gray-300">
+          O servidor SAMP que é a sua cara!
+        </p>
       </header>
 
       <section className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -15,7 +22,10 @@ export default function Home() {
           <CardContent className="p-4">
             <Info className="mb-2 text-white" />
             <h2 className="text-xl font-semibold mb-1">Sobre o Servidor</h2>
-            <p>Servidor Roleplay BR com sistema de empregos, facções, VIP e muito mais!</p>
+            <p>
+              Servidor Roleplay BR com sistema de empregos, facções, VIP e muito
+              mais!
+            </p>
           </CardContent>
         </Card>
 
@@ -23,7 +33,14 @@ export default function Home() {
           <CardContent className="p-4">
             <User className="mb-2 text-white" />
             <h2 className="text-xl font-semibold mb-1">Como Jogar</h2>
+<<<<<<< HEAD
             <p>Baixe o SAMP, conecte ao IP: <b>177.54.146.232:7782</b> e divirta-se.</p>
+=======
+            <p>
+              Baixe o SAMP, conecte ao IP:{" "}
+              <b>brasilplayred.com.br:7777</b> e divirta-se.
+            </p>
+>>>>>>> f777e15 (Adicionados componentes Card e Button e ajustado page.tsx)
           </CardContent>
         </Card>
 
@@ -31,7 +48,10 @@ export default function Home() {
           <CardContent className="p-4">
             <Trophy className="mb-2 text-white" />
             <h2 className="text-xl font-semibold mb-1">Ranking</h2>
-            <p>Veja quem são os tops do servidor em kills, dinheiro, facções e mais.</p>
+            <p>
+              Veja quem são os tops do servidor em kills, dinheiro, facções e
+              mais.
+            </p>
           </CardContent>
         </Card>
       </section>
@@ -39,7 +59,8 @@ export default function Home() {
       <section className="mt-12 text-center">
         <h2 className="text-2xl font-bold mb-4">Como Jogar no Brasil Play Red</h2>
         <p className="mb-6 text-gray-200">
-          Baixe o SAMP, instale o GTA San Andreas e conecte-se ao IP do servidor para jogar com a galera!
+          Baixe o SAMP, instale o GTA San Andreas e conecte-se ao IP do servidor
+          para jogar com a galera!
         </p>
         <a
           href="https://www.sa-mp.mp/downloads/"

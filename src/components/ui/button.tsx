@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // src/components/ui/button.tsx
 import * as React from "react";
 
@@ -15,3 +16,17 @@ export function Button({ className = "", ...props }: ButtonProps) {
 }
 
 export default Button;
+=======
+import React from "react";
+
+export function Button({ children, onClick, className }: { children: React.ReactNode; onClick?: () => void; className?: string }) {
+  return (
+    <button
+      onClick={onClick}
+      className={`px-4 py-2 rounded-xl font-semibold bg-red-700 hover:bg-red-600 text-white transition ${className || ""}`}
+    >
+      {children}
+    </button>
+  );
+}
+>>>>>>> f777e15 (Adicionados componentes Card e Button e ajustado page.tsx)
