@@ -4,17 +4,20 @@ import { Card, CardContent } from "../components/ui/card";
 export default function Home() {
   return (
     <main
-      className="min-h-screen bg-cover bg-center text-white p-6"
-      style={{ backgroundImage: "url('/fundo.jpg')" }}
+      className="min-h-screen text-white p-6 bg-cover bg-center"
+      style={{
+        backgroundImage:
+          "url('https://jumpshare.com/s/s8f5ddcS4pUUgS81tic7')",
+      }}
     >
-      <header className="text-center py-8">
+      <header className="text-center py-8 bg-black/60 rounded-xl">
         <h1 className="text-4xl font-bold">Brasil Play Red</h1>
         <p className="text-lg text-gray-300">
           O servidor SAMP que é a sua cara!
         </p>
       </header>
 
-      <section className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <section className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
         <Card className="bg-red-800/80">
           <CardContent className="p-4">
             <Info className="mb-2 text-white" />
@@ -49,7 +52,7 @@ export default function Home() {
         </Card>
       </section>
 
-      <section className="mt-12 text-center">
+      <section className="mt-12 text-center bg-black/60 rounded-xl p-6">
         <h2 className="text-2xl font-bold mb-4">
           Como Jogar no Brasil Play Red
         </h2>
@@ -67,7 +70,7 @@ export default function Home() {
         </a>
       </section>
 
-      <section className="mt-12 text-center">
+      <section className="mt-12 text-center bg-black/60 rounded-xl p-6">
         <div className="flex items-center justify-center gap-2 mb-2">
           <MessageCircle className="text-white w-6 h-6" />
           <h2 className="text-2xl font-bold">Nosso Discord</h2>
@@ -85,7 +88,7 @@ export default function Home() {
 
         <div className="mt-4">
           <a
-            href="https://discord.gg/2FvPEJaB9T"
+            href="https://discord.gg/MdBN7fnr"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-white underline text-lg"
@@ -96,7 +99,7 @@ export default function Home() {
         </div>
       </section>
 
-      <footer className="mt-16 text-center text-sm text-gray-400">
+      <footer className="mt-16 text-center text-sm text-gray-300 bg-black/60 rounded-xl p-4">
         &copy; 2025 Brasil Play Red — Todos os direitos reservados. |
         <a
           href="https://www.sa-mp.mp/downloads/"
@@ -109,4 +112,4 @@ export default function Home() {
       </footer>
     </main>
   );
-}
+      }
