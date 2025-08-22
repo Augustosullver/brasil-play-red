@@ -1,5 +1,5 @@
 import { Youtube, Facebook, Instagram, MessageCircle } from "lucide-react";
-import { Card, CardContent } from "../../components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 
 export default function RedesSociaisPage() {
   return (
