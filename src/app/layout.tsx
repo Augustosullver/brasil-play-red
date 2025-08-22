@@ -1,23 +1,31 @@
-import type { Metadata } from 'next'
-import './globals.css'
+import type { Metadata } from "next";
+import "./globals.css";
 
 export const metadata: Metadata = {
-  title: 'Meu App',
-  description: 'Projeto com Next.js + Tailwind',
-}
+  title: "Brasil Play Red",
+  description: "Servidor SAMP Roleplay",
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="pt-br">
-      <body className="bg-gray-100 text-gray-900">
-        {children}
+      <body className="relative min-h-screen">
+        {/* Imagem de fundo */}
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: "url('/fundo.jpg')" }}
+        />
+
+        {/* Overlay escuro */}
+        <div className="absolute inset-0 bg-black/60" />
+
+        {/* Conteúdo */}
+        <main className="relative z-10">{children}</main>
       </body>
     </html>
-  )
+  );
 }
-
-
