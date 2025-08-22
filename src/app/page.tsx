@@ -7,7 +7,7 @@ export default function Home() {
       className="min-h-screen text-white p-6 bg-cover bg-center"
       style={{
         backgroundImage:
-          "url('https://wallpapers.com/images/featured-full/papel-de-parede-para-celular-gratis-gta-san-andreas-6fz9tt0ivo7irsjj.jpg)",
+          "url('https://wallpapers.com/images/featured-full/papel-de-parede-para-celular-gratis-gta-san-andreas-6fz9tt0ivo7irsjj.jpg')",
       }}
     >
       <header className="text-center py-8 bg-black/60 rounded-xl">
