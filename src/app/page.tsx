@@ -78,7 +78,7 @@ export default function Home() {
 
         <div className="flex justify-center">
           <iframe
-            src="https://discord.com/widget?id=1111407916965167144&theme=dark"
+            src="<iframe src="https://discord.com/widget?id=1394872603315015680&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>"
             width="350"
             height="500"
             sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
