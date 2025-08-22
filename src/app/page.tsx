@@ -4,7 +4,7 @@ import { Card, CardContent } from "../components/ui/card";
 export default function Home() {
   return (
     <main
-      className="min-h-screen text-white p-6 bg-cover bg-center"
+      className="min-h-screen bg-cover bg-center text-white p-6"
       style={{ backgroundImage: "url('/fundo.jpg')" }}
     >
       <header className="text-center py-8">
