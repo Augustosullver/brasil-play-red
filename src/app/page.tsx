@@ -7,7 +7,7 @@ export default function Home() {
       className="min-h-screen text-white p-6 bg-cover bg-center"
       style={{
         backgroundImage:
-          "url('https://jumpshare.com/s/s8f5ddcS4pUUgS81tic7')",
+          "url('https://wallpapers.com/images/featured-full/papel-de-parede-para-celular-gratis-gta-san-andreas-6fz9tt0ivo7irsjj.jpg)",
       }}
     >
       <header className="text-center py-8 bg-black/60 rounded-xl">
@@ -78,7 +78,7 @@ export default function Home() {
 
         <div className="flex justify-center">
           <iframe
-            src="<iframe src="https://discord.com/widget?id=1394872603315015680&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>"
+            src="https://discord.com/api/guilds/1394872603315015680/widget.json"
             width="350"
             height="500"
             sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
@@ -112,4 +112,4 @@ export default function Home() {
       </footer>
     </main>
   );
-      }
+}
