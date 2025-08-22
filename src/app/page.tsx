@@ -1,6 +1,6 @@
-import { Discord, Trophy, User, Info } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
+import { Discord, Trophy, User, Info } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
 
 export default function Home() {
   return (
@@ -23,9 +23,7 @@ export default function Home() {
           <CardContent className="p-4">
             <User className="mb-2 text-white" />
             <h2 className="text-xl font-semibold mb-1">Como Jogar</h2>
-            <p>
-              Baixe o SAMP, conecte ao IP: <b>brasilplayred.com.br:7777</b> e divirta-se.
-            </p>
+            <p>Baixe o SAMP, conecte ao IP: <b>177.54.146.232:7782</b> e divirta-se.</p>
           </CardContent>
         </Card>
 
@@ -72,7 +70,7 @@ export default function Home() {
 
         <div className="mt-4">
           <a
-            href="https://discord.gg/MdBN7fnr"
+            href="https://discord.gg/2FvPEJaB9T"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-white underline text-lg"
@@ -95,5 +93,5 @@ export default function Home() {
         </a>
       </footer>
     </main>
-  )
+  );
 }
